@@ -1,4 +1,4 @@
-python -m pip install sounddevice
+conda install -c conda-forge python-sounddevice
 import streamlit as st
 from googletrans import Translator
 from gtts import gTTS

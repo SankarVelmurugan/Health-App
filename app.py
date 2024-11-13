@@ -1,4 +1,4 @@
-pip install sounddevice
+python -m pip install sounddevice
 import streamlit as st
 from googletrans import Translator
 from gtts import gTTS

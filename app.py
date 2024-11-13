@@ -1,11 +1,11 @@
-conda install -c conda-forge python-sounddevice
+
 import streamlit as st
 from googletrans import Translator
 from gtts import gTTS
 import tempfile
 import io
 import numpy as np
-import sounddevice as sd
+#import sounddevice as sd
 from google.cloud import speech
 from io import BytesIO
 import google.auth
@@ -97,7 +97,7 @@ def capture_and_translate(input_lang_code, output_lang_code):
 
     st.write("Listening...")
     # Record audio using sounddevice
-    audio_data = sd.rec(int(5 * 16000), samplerate=16000, channels=1, dtype='int16')
+    audio_data = audiorecorder(start_prompt="Start recording", stop_prompt="Stop recording", pause_prompt="", show_visualizer=True, key=None):
     sd.wait()
 
     # Convert audio data to bytes

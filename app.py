@@ -1,10 +1,11 @@
+pip install sounddevice
 import streamlit as st
 from googletrans import Translator
 from gtts import gTTS
 import tempfile
 import io
 import numpy as np
-import pyaudio as sd
+import sounddevice as sd
 from google.cloud import speech
 from io import BytesIO
 import google.auth

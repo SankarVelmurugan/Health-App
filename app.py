@@ -4,7 +4,7 @@ from gtts import gTTS
 import tempfile
 import io
 import numpy as np
-import sounddevice as sd
+import portaudio as sd
 from google.cloud import speech
 from io import BytesIO
 import google.auth

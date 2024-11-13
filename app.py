@@ -97,8 +97,8 @@ def capture_and_translate(input_lang_code, output_lang_code):
 
     st.write("Listening...")
     # Record audio using sounddevice
-    audio_data = audiorecorder(start_prompt="Start recording", stop_prompt="Stop recording", pause_prompt="", show_visualizer=True, key=None):
-    sd.wait()
+    audio_data = audiorecorder(start_prompt="Start recording", stop_prompt="Stop recording", pause_prompt="", show_visualizer=True, key=None)
+    
 
     # Convert audio data to bytes
     audio_bytes = BytesIO(audio_data.tobytes())
